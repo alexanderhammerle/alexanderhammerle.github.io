@@ -1,10 +1,28 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h4 {
+    scroll-margin-top: 80px; /* Offset for fixed nav height */
+}
+
 body {
     font-family: Helvetica;
     background-color: #eef109;
     font-size: 20px;
+    margin: 0; /* Remove default body margin */
 }
+
 p {
     line-height: 1.6;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+.results {
+    font-weight: bold;
 }
 
 .container {
@@ -22,6 +40,20 @@ p {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sponsor-logo {
+    width: 90%;
+    /* margin: 10px; */
+    border-radius: 8px;
+    display: block;
+    /* margin-left: auto; */
+    transition: transform 0.2s;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin:auto;
+}
+.sponsor-logo:hover {
+    transform: scale(1.1);
 }
 
 .frames {
@@ -64,12 +96,13 @@ iframe {
 }
 
 .footer {
-    width: 100%;
+    width: 100vw;         /* Full viewport width */
     background: #222;
     color: #fff;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
+    margin: 0;            /* Remove margin */
+    box-sizing: border-box;
 }
 
 .footer button {
@@ -93,10 +126,10 @@ iframe {
 
 /* Top navigation styles */
 .topnav {
-    /*position: fixed;*/
+    position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;         /* Full viewport width */
     background: #222;
     color: #eef109;
     display: flex;
@@ -104,6 +137,8 @@ iframe {
     gap: 30px;
     padding: 16px 0;
     z-index: 1000;
+    margin: 0;            /* Remove any margin */
+    box-sizing: border-box;
 }
 
 .topnav a {
@@ -124,7 +159,7 @@ iframe {
 
 /* Footer logo styles */
 .footer-logo {
-    width: 40px;
+    /* width: 40px; */
     height: 40px;
     margin: 0 10px;
     vertical-align: middle;
@@ -138,7 +173,7 @@ iframe {
 /* Responsive adjustments for small screens */
 @media (max-width: 600px) {
     body {
-        font-size: 3.5vw; /* Slightly larger font on small screens */
+        font-size: 3.3vw; /* Slightly larger font on small screens */
     }
     .main {
         padding: 10px;
@@ -156,7 +191,10 @@ iframe {
     .contact-form button {
         font-size: 1.1em;
     }
+}
+
+@media (max-width: 800px) {
     .topnav a {
-        font-size: 3.5vw; /* Larger font size for small screens */
+        font-size: 2.5vw; /* Larger font size for small screens */
     }
 }
