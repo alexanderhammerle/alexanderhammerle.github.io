@@ -1,19 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <div class="container header">
-            <h1 class="item">Alexander Hammerle</h1>
-            <h3>Mountainbike Rider</h3>
-        </div>
-        <div class="main">
-            <p>Welcome to my little website!</p>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexander Hammerle - Mountainbike Rider</title>
+    <link rel="stylesheet" href="style.css">
+    <!--
+    <meta name="description" content="Alexander Hammerle, Mountainbike Rider from Austria.">
+    <link rel="icon" href="favicon.ico">
+    -->
+</head>
+<body>
+    <nav class="topnav">
+        <a href="#results">Results</a>
+        <a href="#partners">Partners & Sponsors</a>
+        <a href="#updates">Stay up to date</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container header">
+        <h1 class="item">Alexander Hammerle</h1>
+        <h3>Mountainbike Rider</h3>
+    </div>
+    <div class="main">
+        <p>
+            My name is Alexander Hammerle and I am a 20-year-old cyclist from Austria.
+            I have been participating in Mountainbike Cross-Country races for 15 years
+            and am part of the Austrian Nationalteam since 2018. Currently, I am in my second year racing
+            in the U23 category.
+        </p>
 
-            <p class="frames"><iframe src="https://instagram.com/alexander_hammerle/embed/" title="Instagram" frameborder="0"></iframe></p>
+        <h4 id="results">Results</h4>
+        <p>Here are some of my recent results:</p>
+        <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+
+        <h4 id="partners">My Partners and Sponsors</h4>
+        <p>A big Thank You for the support goes to:</p>
+
+        <h4 id="updates">Stay up to date</h4>
+        <p class="frames">
+            <iframe src="https://instagram.com/alexander_hammerle/embed/" title="Instagram" frameborder="0"></iframe>
+        </p>
+
+        <h4 id="contact">Contact</h4>
+        <p>
+            Feel free to reach out to me:
+        </p>
+        <form action="https://formspree.io/f/mdkdgnql" method="POST" class="contact-form">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <br>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+    
+    <footer class="footer">
+        <div>
+            <a href="https://www.instagram.com/alexander_hammerle/" target="_blank">
+                <img src="images/instagram-2016-5.svg" alt="Instagram" class="footer-logo">
+            </a>
+            <a href="mailto:hammerle.alexander99@gmail.com">
+                <button>Email Me</button>
+            </a>
         </div>
-        
-        <script src="script.js"></script>
-    </body>
+        <p>&copy; 2025 Alexander Hammerle</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
