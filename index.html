@@ -3,128 +3,198 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#101214">
     <title>Alexander Hammerle - Mountainbike Rider</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Alexander Hammerle, Mountainbike Rider from Austria.">
-    <!-- <link rel="icon" href="favicon.ico"> -->
+    <meta name="description" content="Alexander Hammerle, Austrian mountainbike cross-country rider and member of the Austrian national team.">
     <meta name="keywords" content="Mountainbike, Rider, Austria, Alexander Hammerle, UCI MTB World Series, Cycling">
     <meta name="author" content="Alexander Hammerle">
     <meta property="og:title" content="Alexander Hammerle - Mountainbike Rider">
-    <meta property="og:description" content="Alexander Hammerle, Mountainbike Rider from Austria.">
-    <meta property="og:image" content="images/Raika-Krug_240523-008.jpg">
+    <meta property="og:description" content="Austrian mountainbike cross-country rider.">
+    <meta property="og:image" content="images/action-photo.JPEG">
     <meta property="og:url" content="https://alexanderhammerle.com">
     <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="topnav">
-        <a href="#results">Results</a>
-        <a href="#partners">Partners & Sponsors</a>
-        <a href="#updates">Stay up to date</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <div class="container header">
-        <h1 class="item">Alexander Hammerle</h1>
-        <img src="images/Raika-Krug_240523-008.jpg" alt="Portrait" class="portrait">
-        <h3>Mountainbike Rider</h3>
-    </div>
-    <div class="main">
-        <p style="margin: -5px 0 0 0;">
-            My name is Alexander Hammerle and I am a 21-year-old cyclist from Austria.
-            I have been participating in Mountainbike Cross-Country races for 16 years
-            and have been part of the Austrian national team since 2018. Currently, I am in my third year racing
-            in the U23 category.
-        </p>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="Alexander Hammerle, home">
+            <span class="wordmark-mark">AH</span>
+            <span>Alexander Hammerle</span>
+        </a>
+        <nav class="topnav" aria-label="Main navigation">
+            <a href="#results">Results</a>
+            <a href="#partners">Partners</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
-        <h4 id="results">Results</h4>
-        <p>Here are some of my recent results:</p>
+    <main id="main">
+        <section class="hero" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="status-dot"></span> Austrian MTB rider <span class="eyebrow-divider">/</span> U23 XCO</p>
+                <h1 id="hero-title">Alexander<br><em>Hammerle</em></h1>
+                <p class="hero-intro">I’m a mountainbike cross-country rider from Austria, racing on the international stage and part of the Austrian national team since 2018.</p>
+                <a class="text-link hero-link" href="#results">Get to know my story <span aria-hidden="true">↓</span></a>
+                <p class="hero-note">Based in Austria <span aria-hidden="true">·</span> Racing worldwide</p>
+            </div>
+            <figure class="hero-portrait">
+                <img src="images/Raika-Krug_240523-008.jpg" alt="Portrait of Alexander Hammerle" fetchpriority="high">
+                <figcaption><span>Alexander Hammerle</span><span>MTB / XCO</span></figcaption>
+            </figure>
+        </section>
 
-        <div id="preview">
-            <ul>
-                <li>P12 UCI MTB World Series (U23 XCO) La Thuile - ITA 2026</li>
-                <li>P8 Europeans XCC U23 2026</li>
-                <li>Bronze Medal National Championships XCO 2026</li>
-                <li>National Champion XCC 2024</li>
+        <section class="results-section" id="results" aria-labelledby="results-title">
+            <figure class="action-photo">
+                <img src="images/action-photo.JPEG" alt="Alexander racing through a forest course" loading="lazy">
+                <figcaption><span>All in, every lap.</span></figcaption>
+            </figure>
+            <div class="results-copy">
+                <p class="eyebrow">The work speaks</p>
+                <h2 id="results-title">Focused on<br><em>what’s next.</em></h2>
+                <p class="section-intro">A few moments from the past seasons that keep me moving forward.</p>
+                <ul class="highlight-results">
+                    <li><strong>12th</strong><span>UCI MTB World Series · U23 XCO<br>La Thuile, 2026</span></li>
+                    <li><strong>8th</strong><span>European Championships · U23 XCC<br>2026</span></li>
+                    <li><strong>3rd</strong><span>National Championships · XCO<br>2026</span></li>
+                    <li><strong>1st</strong><span>National Champion · XCC<br>2024</span></li>
+                </ul>
+                <button class="outline-button" id="seeBtn" type="button" aria-expanded="false" aria-controls="fullResults">Explore all results <span aria-hidden="true">+</span></button>
+                <div id="fullResults" hidden aria-hidden="true">
+                    <div class="full-results-content">
+                        <div class="result-group">
+                            <h3>UCI MTB World Series U23 XCO / XCC</h3>
+                            <ul>
+                                <li>P12 / P24 - La Thuile, ITA 2026</li>
+                                <li>P21 / P21 - Lenzerheide, SUI 2026</li>
+                                <li>P28 / P29 - Leogang, AUT 2026</li>
+                                <li>P28 - Pal Arinsal, AND 2025</li>
+                                <li>P31 / P34 - Lake Placid, USA 2026</li>
+                                <li>P33 - Les Gets, FRA 2025</li>
+                            </ul>
+                        </div>
+                        <div class="result-group">
+                            <h3>World and European Championships</h3>
+                            <ul>
+                                <li>P8 - Europeans XCC U23 2026</li>
+                                <li>P21 - Europeans XCO U23 2026</li>
+                                <li>P34 - Worlds XCO U23 2026</li>
+                                <li>P6 - Worlds XCR 2026</li>
+                                <li>P25 - Worlds XCC U23 2024</li>
+                                <li>P16 - Worlds XCO Juniors 2023</li>
+                                <li>P11 - Europeans XCO Juniors 2023</li>
+                                <li>P7 - Europeans XCC Juniors 2023</li>
+                            </ul>
+                        </div>
+                        <div class="result-group">
+                            <h3>Other international races</h3>
+                            <ul>
+                                <li>P2 - U23 UCI Continental Series, Drozdovo, SVK</li>
+                                <li>P3 - UCI C1 Premantura, CRO</li>
+                                <li>P7 - U23 UCI Continental Series, Haiming, AUT</li>
+                            </ul>
+                        </div>
+                        <div class="result-group">
+                            <h3>National championships</h3>
+                            <ul>
+                                <li>National Champion XCC 2024</li>
+                                <li>P3 - National Championships XCO 2026</li>
+                                <li>P2 - Austrian Championships XCO U23 2025</li>
+                                <li>P3 - Austrian Championships XCO U23 2024</li>
+                                <li>4-times Austrian Champion XCO U17 / Juniors 2020–2023</li>
+                            </ul>
+                        </div>
+                        <a class="text-link results-source" href="https://mtbdata.com/riders/alexander-hammerle" target="_blank" rel="noopener noreferrer">All results on MTBdata <span aria-hidden="true">↗</span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sponsor-section" id="partners" aria-labelledby="partners-title">
+            <div class="sponsor-copy">
+                <p class="eyebrow">Good people. Great support.</p>
+                <h2 id="partners-title">Stronger<br><em>together.</em></h2>
+                <p class="section-intro">A big thank you to the partners who make this journey possible. I’m proud to have you in my corner.</p>
+            </div>
+            <ul class="sponsor-logos" aria-label="Sponsors and partners">
+                <li>
+                    <a class="sponsor-logo" href="https://radsportkrug.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-radsport-krug.png" alt="Radsport Krug">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://www.panchowheels.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/panchowheels_logo_mobile.svg" alt="Pancho Wheels">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://maxxistires.de/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-maxxis.png" alt="MAXXIS">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://www.bike-sports.at/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-bike-and-sports.png" alt="Bike+Sports">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://www.unno.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-unno.png" alt="UNNO">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://www.askoe-tirol.at/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-asko.png" alt="ASKÖ Tirol">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://www.raiffeisen.at/tirol/mitte-west/de/meine-bank/bankstellen/mieming.html" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-raiffeisen.png" alt="Raiffeisenbank Mieming">
+                    </a>
+                </li>
+                <li>
+                    <a class="sponsor-logo" href="https://radsportclub-mieming.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="images/sponsor-raika-krug-mieming.svg" alt="RSC Raika Krug Mieming">
+                    </a>
+                </li>
             </ul>
-        </div>
+        </section>
 
-        <div id="fullResults">
-            <p class="results">UCI MTB World Series U23 XCO/XCC</p>
-        <ul>
-            <li>P12/P24 La Thuile - ITA 2026</li>
-            <li>P21/P21 Lenzerheide - SUI 2026</li>
-            <li>P28/P29 Leogang - AUT 2026</li>
-            <li>P28 Pal Arinsal - AND 2025</li>
-            <li>P31/P34 Lake Placid - USA 2026</li>
-            <li>P33 Les Gets - FRA 2025</li>
-        </ul>
-        <p class="results">World- and European Championships</p>
-        <ul>
-            <li>P8 Europeans XCC U23 2026</li>
-            <li>P21 Europeans XCO U23 2026</li>
-            <li>P34 Worlds XCO U23 2026</li>
-            <li>P6 Worlds XCR 2026</li>
-            <li>P25 Worlds XCC U23 2024</li>
-            <li>P16 Worlds XCO Juniors 2023</li>
-            <li>P11 Europeans XCO Juniors 2023</li>
-            <li>P7 Europeans XCC Juniors 2023</li>
-        </ul>
-        <p class="results">Other International Races</p>
-        <ul>
-            <li>P2 U23 UCI Continental Series Drozdovo - SVK</li>
-            <li>P3 UCI C1 Premantura - CRO</li>
-            <li>P7 U23 UCI Continental Series Haiming - AUT</li>
-        </ul>
-        <p class="results">National Championships</p>
-        <ul>
-            <li>National Champion XCC 2024</li>
-            <li>P3 National Championships XCO 2026</li>
-            <li>P2 Austrian Championships XCO U23 2025</li>
-            <li>P3 Austrian Championships XCO U23 2024</li>
-            <li>4-times Austrian Champion XCO U17/Juniors 2020-2023</li>
-        </ul>
-        <p>Find all of my results on <a href="https://mtbdata.com/riders/alexander-hammerle" class="link" target="_blank">MTBdata</a>.</p>
-        </div>
-        <button id="seeBtn" onclick="toggleResults()">Show more</button>
+        <section class="contact-section" id="contact" aria-labelledby="contact-title">
+            <div class="contact-heading">
+                <p class="eyebrow">Follow along / Get in touch</p>
+                <h2 id="contact-title">See you<br><em>out there.</em></h2>
+            </div>
+            <div class="contact-details">
+                <a class="contact-link" href="https://www.instagram.com/alexander_hammerle/" target="_blank" rel="noopener noreferrer">
+                    <img src="images/instagram-2016-5.svg" alt="" aria-hidden="true">
+                    <span><small>Instagram</small>@alexander_hammerle</span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-link" href="mailto:hammerle.alexander99@gmail.com">
+                    <span class="contact-symbol" aria-hidden="true">@</span>
+                    <span><small>Email</small>hammerle.alexander99@gmail.com</span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                </a>
+                <a class="contact-link" href="https://mtbdata.com/riders/alexander-hammerle" target="_blank" rel="noopener noreferrer">
+                    <span class="contact-symbol contact-symbol-mtb" aria-hidden="true">M</span>
+                    <span><small>Race profile</small>View my results on MTBdata</span>
+                    <span class="link-arrow" aria-hidden="true">↗</span>
+                </a>
+            </div>
+            <form action="https://formspree.io/f/mdkdgnql" method="POST" class="contact-form">
+                <label for="email">Or send me a message</label>
+                <input type="email" id="email" name="email" placeholder="Your email" required>
+                <textarea id="message" name="message" rows="3" placeholder="Your message" required></textarea>
+                <button type="submit">Send message <span aria-hidden="true">↗</span></button>
+            </form>
+        </section>
+    </main>
 
-        <h4 id="partners">My Partners and Sponsors</h4>
-        <p>A big Thank You for the support goes to:</p>
-        <a href="https://radsportkrug.com/" target="_blank">
-            <img src="images/Logo Quer.JPG" alt="Radsport Krug" class="sponsor-logo">
-        </a>
-        <br>
-        <a href="https://www.panchowheels.com/" target="_blank">
-            <img src="images/panchowheels_logo_mobile.svg" alt="Pancho Wheels" class="pancho-logo">
-        </a>
-
-        <h4 id="updates">Stay up to date</h4>
-        <p class="frames">
-            <iframe src="https://instagram.com/alexander_hammerle/embed/" title="Instagram" frameborder="0"></iframe>
-        </p>
-
-        <h4 id="contact">Contact</h4>
-        <p>
-            Feel free to reach out to me:
-        </p>
-        <form action="https://formspree.io/f/mdkdgnql" method="POST" class="contact-form">
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
-            <br>
-            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-            <br>
-            <button type="submit">Send</button>
-        </form>
-    </div>
-    
     <footer class="footer">
-        <div>
-            <a href="https://www.instagram.com/alexander_hammerle/" target="_blank">
-                <img src="images/instagram-2016-5.svg" alt="Instagram" class="footer-logo">
-            </a><a href="mailto:hammerle.alexander99@gmail.com">
-                <button>Email Me</button>
-            </a><a href="https://mtbdata.com/riders/alexander-hammerle" target="_blank">
-                <button>MTBdata</button>
-            </a>
-        </div>
-        <p>&copy; 2026 Alexander Hammerle</p>
+        <a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark">AH</span><span>Alexander Hammerle</span></a>
+        <p>© 2026 Alexander Hammerle <span aria-hidden="true">·</span> Made to move.</p>
+        <a class="back-to-top" href="#home">Back to top ↑</a>
     </footer>
     <script src="script.js"></script>
 </body>
