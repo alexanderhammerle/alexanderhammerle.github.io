@@ -71,6 +71,7 @@ resultsButton.addEventListener('click', () => {
                 }
             }
         });
+
         return;
     }
 
@@ -94,5 +95,48 @@ resultsButton.addEventListener('click', () => {
                 actionPhoto.style.height = `${photoHeight}px`;
             }
         });
+    }
+});
+
+const contactForm = document.querySelector('.contact-form');
+const contactFormStatus = document.getElementById('contact-form-status');
+const contactFormSubmitButton = contactForm.querySelector('button[type="submit"]');
+const contactFormButtonLabel = contactFormSubmitButton.querySelector('.contact-form-button-label');
+
+contactForm.addEventListener('submit', async (event) => {
+    event.preventDefault();
+
+    if (contactFormSubmitButton.disabled) {
+        return;
+    }
+
+    contactFormSubmitButton.disabled = true;
+    contactFormButtonLabel.textContent = 'Sending...';
+    contactFormStatus.hidden = true;
+    contactFormStatus.classList.remove('is-success', 'is-error');
+
+    try {
+        const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: new FormData(contactForm),
+            headers: { Accept: 'application/json' }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Formspree returned ${response.status}`);
+        }
+
+        contactForm.reset();
+        contactFormStatus.textContent = 'Thanks — your message has been sent.';
+        contactFormStatus.classList.add('is-success');
+    } catch (error) {
+        console.error('Contact form submission failed.', error);
+        contactFormStatus.textContent = 'Your message could not be sent. Please try again or email me using the address above.';
+        contactFormStatus.classList.add('is-error');
+    } finally {
+        contactFormSubmitButton.disabled = false;
+        contactFormButtonLabel.textContent = 'Send message';
+        contactFormStatus.hidden = false;
+        contactFormStatus.focus();
     }
 });
