@@ -127,7 +127,7 @@ contactForm.addEventListener('submit', async (event) => {
         }
 
         contactForm.reset();
-        contactFormStatus.textContent = 'Thanks — your message has been sent.';
+        contactFormStatus.textContent = 'Thanks - your message has been sent.';
         contactFormStatus.classList.add('is-success');
     } catch (error) {
         console.error('Contact form submission failed.', error);
