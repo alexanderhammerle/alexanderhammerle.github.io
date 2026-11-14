@@ -293,6 +293,18 @@ h2 em {
     padding: 25px 28px 20px;
 }
 
+.action-photo .photo-credit {
+    font-size: 10px;
+    letter-spacing: 0.04em;
+    text-transform: none;
+}
+
+.photo-credit > span {
+    margin-right: 4px;
+    font-size: 1em;
+    vertical-align: baseline;
+}
+
 .results-copy {
     align-self: center;
     max-width: 680px;
@@ -751,7 +763,7 @@ h2 em {
     }
 
     .topnav a {
-        font-size: 8px;
+        font-size: 9px;
         letter-spacing: 0.05em;
     }
 
@@ -805,6 +817,19 @@ h2 em {
     .action-photo {
         min-height: 0;
         height: 58svh;
+    }
+
+    .action-photo figcaption {
+        align-items: flex-end;
+        gap: 12px;
+        padding: 22px 18px 16px;
+    }
+
+    .action-photo .photo-credit {
+        max-width: 62%;
+        font-size: 9px;
+        line-height: 1.4;
+        text-align: right;
     }
 
     .results-copy {
